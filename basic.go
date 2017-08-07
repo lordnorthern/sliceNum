@@ -6,6 +6,7 @@ import (
 
 //SumSlice return the sum of all the elements in a slice
 //Only accepts int, int32, int64, float32 and float64
+//
 func SumSlice(slice interface{}) (total float32, err error) {
 	chkSlice := reflect.TypeOf(slice)
 	if chkSlice.Kind() != reflect.TypeOf([]int{}).Kind() {
